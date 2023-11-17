@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <unistd.h>
 #include <stdarg.h>
 
 /* _printf function */
@@ -13,4 +14,3 @@ int print_string(char *str);
 int print_percent(void);
 
 #endif /* MAIN_H */
-
