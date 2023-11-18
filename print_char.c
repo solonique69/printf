@@ -8,11 +8,13 @@
 
 int print_char(int ch)
 {
-	if (ch == '\0')
-	{
-		write(1, "\\0", 2);
-		return (2); /*return length of "\\0"*/
-	}
+	/**
+	 * if (ch == '\0')
+	 * {
+	 * write(1, "\\0", 2);
+	 * return (2); return length of "\\0"
+	 * }
+	 */
 	write(1, &ch, 1);
 	return (1);
 }
