@@ -19,7 +19,7 @@ int handle_specifier(char specifier, va_list args)
 			return (print_percent());
 		default:
 			/* Unknown specifier, print it as is*/
-			write(1, "%", 1);
+			write(1, &specifier, 1);
 			return (1);
 	}
 }

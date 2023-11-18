@@ -9,6 +9,11 @@
 
 int _printf(const char *format, ...)
 {
+	if (format == NULL)
+	{
+		return (-1); /*handles NULL format string*/
+	}
+
 	va_list args;
 	int count = 0;
 
