@@ -10,13 +10,13 @@ int print_string(char *str)
 {
 	int len;
 
+	len = 0;
+
 	if (str == NULL)
 	{
 		write(1, "(null)", 6);
 		return (6);  /*Return the length of "(null)"*/
 	}
-
-	len = 0;
 
 	while (str[len] != '\0')
 	{
