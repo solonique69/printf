@@ -21,6 +21,12 @@ int _printf(const char *format, ...)
 
 	while (*format != '\0')
 	{
+		if (*format == '%' && *(format + 1) == '%' && *(format + 2) == '\0')
+		{
+			/*handles when '%' is the only argument*/
+			va_end(args);
+			return (0);
+		}
 		if (*format == '%' && (*(format + 1) == 'c' ||
 			*(format + 1) == 's' || *(format + 1) == '%' || *(format + 1) == ' '))
 		{
