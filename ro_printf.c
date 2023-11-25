@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 	int count = 0;
 
 	va_start(ap, format);
-	count = ro_handspec(format, argument, ap);
+	count = ro_print(format, argument, ap);
 	va_end(ap);
 	return (count);
 }

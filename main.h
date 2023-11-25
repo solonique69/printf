@@ -23,6 +23,9 @@ typedef struct print
 /* _printf function */
 int _printf(const char *format, ...);
 
+/* function that handles specifiers */
+int ro_print(const char *format, print_type argument[], va_list ap);
+
 /* Msaidizi functions */
 int ro_putchar(char ro);
 int ro_printchar(va_list ap);
