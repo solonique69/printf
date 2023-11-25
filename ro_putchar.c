@@ -4,7 +4,7 @@
 
 /**
  * ro_putchar - writes argument ro to stdout
- * @c: argument to be printed
+ * @ro: argument to be printed
  * Description: This fuction behaves like putchar
  * Return: returns 1 on success and -1 on error
  */
