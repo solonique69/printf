@@ -10,9 +10,9 @@
 int _printf(const char *format, ...)
 {
 	print_type argument[] = {
-		{"c", ro_print_char},
-		{"s", ro_print_string},
-		{"%", ro_print_percent},
+		{"c", ro_printchar},
+		{"s", ro_printstr},
+		{"%", ro_printpercent},
 		{NULL, NULL}
 	};
 	va_list ap;
