@@ -10,5 +10,4 @@ int ro_printpercent(va_list ap __attribute__((unused)))
 {
 	ro_putchar('%');
 	return (1);
-}
-/* Codeod by Ofentse Ramphele and Solomon Okomowho */
+}/* Codeod by Ofentse Ramphele and Solomon Okomowho */
