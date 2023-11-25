@@ -6,7 +6,7 @@
  * Return: returns 1 if successful
  */
 
-int ro_printpercent(va_list ap _attribute_((unused)))
+int ro_printpercent(va_list ap __attribute__((unused)))
 {
 	ro_putchar('%');
 	return (1);
