@@ -1,16 +1,32 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <unistd.h>
+/* Header files used */
 #include <stdarg.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+/**
+ * struct print - print
+ * @parameter: Operator
+ * @f: The generated function
+ */
+
+typedef struct print
+{
+	char *parameter;
+	int (*f)(va_list ap);
+} print_type;
 
 /* _printf function */
 int _printf(const char *format, ...);
 
 /* Msaidizi functions */
-int handle_specifier(char specifier, va_list args);
-int print_char(int ch);
-int print_string(char *str);
-int print_percent(void);
+int ro_putchar(char ro);
+int ro_printchar(va_list ap);
+int ro_printstr(va_list ap);
+int ro_printpercent(va_list ap);
 
 #endif /* MAIN_H */
