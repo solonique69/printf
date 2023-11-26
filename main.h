@@ -31,5 +31,6 @@ int ro_putchar(char ro);
 int ro_printchar(va_list ap);
 int ro_printstr(va_list ap);
 int ro_printpercent(va_list ap);
+int ro_printinteger(va_list ap);
 
 #endif /* MAIN_H */
